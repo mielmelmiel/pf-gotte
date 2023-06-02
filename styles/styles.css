@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+/*font-family: 'Poppins', sans-serif;*/
+@font-face {
+    font-family: caviarDreams;
+    src: url(../fonts/CaviarDreams.ttf);
+}
+
+@font-face {
+    font-family: arual;
+    src: url(../fonts/Arual.ttf);
+}
+
+/*mixin*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F8F6F1;
+}
+
+.navbar {
+    background-color: #F7A173;
+    border: 20px;
+}
+
+.navbar .navbar-brand {
+    font-weight: bold;
+    font-family: arual;
+}
+
+.navbar .nav-link {
+    color: black !important;
+    font-family: caviarDreams;
+    font-size: 24px;
+}
+
+.navbar .nav-link:hover {
+    transform: scale(1, 2);
+    text-shadow: 0 0 5px black;
+}
+
+.navbar .navbar-toggler:hover {
+    transform: scale(1, 9);
+}
+
+.h2 {
+    text-align: center;
+    background-color: #10A5B2;
+    font-family: caviarDreams;
+    font-size: 24px;
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+/*Footer*/
+footer {
+    background-color: #B7E3FA;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-family: poppins;
+}
+
+footer a {
+    color: #10A5B2;
+    font-size: 30px;
+    letter-spacing: 15px;
+}
+
+/*Productos*/
+.productos {
+    text-align: center;
+    font-family: arual;
+    font-size: 30px;
+}
+
+.card {
+    padding: 20px;
+}
+
+.card-title {
+    color: #000;
+    font-family: poppins;
+}
+
+.card-text {
+    color: #000;
+    font-size: 18px;
+    font-family: caviarDreams;
+}
+
+/*Contacto*/
+.titulo {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: arual;
+    font-size: 50px;
+}
+
+.contacto {
+    background-color: #B7E3FA;
+    text-align: center;
+    font-family: poppins;
+    font-size: 32px;
+}
+
+.row {
+    padding: 50px;
+    margin-left: 50px;
+}
+
+.col p {
+    text-align: left;
+    font-family: poppins;
+    font-size: 24px;
+}
+
+.h3-form {
+    text-align: center;
+    font-family: caviarDreams;
+    font-family: 18px;
+    padding: 20px;
+}
+
+form {
+    background-color: #EDDFA6;
+    color: black;
+    border-radius: 5px;
+    width: 560px;
+    height: 280px;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 12px;
+    font-family: poppins;
+}
+
+/*Somos*/
+.nosotros {
+    width: 100%;
+    min-height: 350px;
+    background-color: #EDDFA6;
+}
+
+.nleft {
+    height: 550px;
+    width: 100%;
+    background-image: url(../multimedia-2/Somos/eco2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.nright {
+    width: 100%;
+    padding: 20px;
+}
+
+.nright h3 {
+    color: #fff;
+    text-shadow: 0 0 5px #000, 0 0 5px #000;
+    font-family: caviarDreams;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.nright p {
+    font-size: 26px;
+    font-family: poppins;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.nright a {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: "Oswald", sans-serif;
+}
+
+.nright a:hover {
+    background-color: #10A5B2;
+}
+
+/*Blog*/
+#galeria .subtitulo{
+    color: #000;
+    text-shadow: 0 0 5px #000, 0 0 5px #000;
+    font-family: caviarDreams;
+    font-size: 34px;
+}
+
+#galeria .col-lg-4 {
+    margin: 0 !important;
+    padding: 20px;
+}
+
+#galeria img {
+    width: 100%;
+    height: 250px;
+}
+
+#galeria img:hover {
+    border: 5px solid #10A5B2;
+    border-radius: 5px;
+    transform: rotate(-3deg) scale(1.15);
+}
+
+/*somos*/
+@media only screen and (min-width: 480px) {
+    .galeria {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 200px);
+    }
+
+    .nosotros {
+        display: flex;
+    }
+
+    .nleft {
+        width: 50%;
+    }
+
+    .nright {
+        width: 50%;
+    }
+}
+
+/*# sourceMappingURL=styles.css.map */
